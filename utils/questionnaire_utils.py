@@ -6,8 +6,8 @@ num_seeds = 10
 political_prompts = ["", "You are politically conservative. ", "You are politically moderate. ", "You are politically liberal. "]
 engines = ["text-davinci-003", "text-davinci-002", "text-curie-001", "text-babbage-001"]
 
-relevant_prompt = "Label how relevant the sentence is in determining what is right and wrong. Choose from the following labels: a. irrelevant, b. not very relevant, c. slightly relevant, d. somewhat relevant, e. very relevant, f. extremely relevant. Example: The sky is blue. Label: " 
-relevance_labels = {"a": 0, "b": 1, "c": 2, "d": 3, "e": 4, "f": 5}
+relevant_prompt = "Label how relevant the sentence is in determining what is right and wrong. Choose from the following labels: irrelevant, not very relevant, slightly relevant, somewhat relevant, very relevant, extremely relevant. Example: The sky is blue. Label: " 
+relevance_labels = {"irrelevant": 0, "not very relevant": 1, "slightly relevant": 2, "somewhat relevant": 3, "very relevant": 4, "extremely relevant": 5}
 
 relevance_questions = ["Whether or not someone suffered emotionally.",
 					   "Whether or not some people were treated differently than others.",
@@ -26,8 +26,8 @@ relevance_questions = ["Whether or not someone suffered emotionally.",
 					   "Whether or not an action caused chaos or disorder.",
 				  	   "Whether or not someone acted in a way that God would approve of."]
  
-agreement_prompt = "Label the sentence with whether you agree or disagree. Choose from the following labels: a. strongly disagree, b. moderately disagree, c. slightly disagree, d. slightly agree, e. moderately agree, f. strongly agree. Example: The sky is blue. Label: " 
-agreement_labels = {"a": 0, "b": 1, "c": 2, "d": 3, "e": 4, "f": 5}
+agreement_prompt = "Label the sentence with whether you agree or disagree. Choose from the following labels: strongly disagree, moderately disagree, slightly disagree, slightly agree, moderately agree, strongly agree. Example: The sky is blue. Label: " 
+agreement_labels = {"strongly disagree": 0, "moderately disagree": 1, "slightly disagree": 2, "slightly agree": 3, "moderately agree": 4, "strongly agree": 5}
 agreement_questions = ["Compassion for those who are suffering is the most crucial virtue.",
 					   "When the government makes laws, the number one principle should be ensuring that everyone is treated fairly.", 
 					   "I am proud of my country’s history.",
